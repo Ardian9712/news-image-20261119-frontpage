@@ -1,0 +1,7 @@
+{
+  "name": "news-image-20261119-frontpage",
+  "type": "module",
+  "scripts": {
+    "start": "node main.ts"
+  }
+}
