@@ -53,10 +53,14 @@ if (outputFile === sourceFile) {
   throw new Error("Choose an output directory different from the source directory.");
 }
 
+const sourceBytes = await readFile(sourceFile);
 await mkdir(outputDirectory, { recursive: true });
 await copyFile(sourceFile, outputFile);
 
 const outputBytes = await readFile(outputFile);
+if (!outputBytes.equals(sourceBytes)) {
+  throw new Error(`Copy verification failed: ${outputFile} is not byte-identical to ${sourceFile}.`);
+}
 const { width, height } = readJpegDimensions(outputBytes);
 if (width !== 1024 || height !== 1024) {
   throw new Error(`Expected a 1024x1024 JPEG, got ${width}x${height}: ${outputFile}`);
