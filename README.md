@@ -14,7 +14,7 @@ A colorful editorial front page headed **“THE WORLD IN ONE DAY”** and dated 
 2. **GTA VI launch day:** a neon city and sports car accompany the launch-day headline and a caption naming Rockstar, PS5, and Xbox.
 3. **Iran, Kuwait, and Bahrain:** a missile illustration accompanies the headline about Iran targeting US facilities in Kuwait and Bahrain; the caption connects the Gulf escalation with a US strike on Qeshm.
 4. **Anthropic IPO:** a short financial brief displays **$83** and **$81.3B**.
-5. **International Court of Justice:** a brief reads **“ICJ ruling today.”**
+5. **International Court of Justice:** a brief reads **“ICJ: MYANMAR COMMITTED GENOCIDE”**.
 6. **Crimea bridge:** the brief reads **“Crimea bridge hit, Russia says,”** retaining the attribution to Russia.
 
 The hero is marked **“Editorial illustration.”** Contrasting colors, bold headlines, rounded panels, and the blue world map provide visual structure for the day's mix of diplomacy, entertainment, conflict, finance, and law.
@@ -37,10 +37,10 @@ MAKEFUN_OUTPUT_DIR=./output node main.ts
 
 `main.ts` resolves the source `entry.png` relative to its own directory, copies it byte for byte to `MAKEFUN_OUTPUT_DIR/entry.png` (default `./output/entry.png`), then reads the output's JPEG header to verify dimensions of exactly **1024×1024**. It prints the verified path, dimensions, and byte count, and makes no network calls. Relative output directories are resolved from the working directory.
 
-The supplied `entry.png` is a **JPEG despite its filename**, measuring 1024×1024 and 360,510 bytes. Its SHA-256 is:
+The supplied `entry.png` is a **JPEG despite its filename**, measuring 1024×1024 and 434,338 bytes. Its SHA-256 is:
 
 ```text
-0cd38ac9132a1b7e9d499c63ee7a27730b9b94bd6dd46a02817af6ac64777bf1
+9ab3c037cb317332028a54285feb77fbf7bb6dce943fcc8a2f5266561f2a4a27
 ```
 
 Licensed under the [MIT license](LICENSE).
